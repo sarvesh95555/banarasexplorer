@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banaras Explorer - Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+
+        }
+
+        nav {
+            background-color: #404142;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #b39ddb;
+            text-decoration: underline;
+        }
+
+
+        section {
+            padding: 40px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            height: 1250px;
+        }
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .tour-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .tour-item {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid cyan;
+        }
+
+        .tour-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 5px rgba(255, 0, 0, 0.15);
+        }
+
+        .tour-item h4 {
+            font-size: 22px;
+            color: #4a148c;
+            margin-bottom: 10px;
+        }
+
+        .tour-item p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+
+        footer {
+            background-color: #6c757d;
+            color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section h3, .footer-section h4 {
+            color: white;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #040404;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Banaras Explorer</h1><br>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>Explore Our Guided Tours</h3>
+        <p>Discover Banaras with our experienced guides and curated tour options. Choose a tour and get ready for an
+            unforgettable experience!</p>
+
+        <div class="tour-list">
+            <div class="tour-item">
+                <img src="https://cdn.getyourguide.com/img/tour/2355aaaadb8ffc49.jpeg/98.jpg" alt="Heritage Walk"
+                    height="200px">
+                <h4>Heritage Walk</h4>
+                <p>Explore the ancient temples and bustling ghats of Banaras with our guided Heritage Walk.</p>
+                <p><strong>Price:</strong> ₹500 per person</p>
+                <button style ="color: #1c93e8;" class="book-button">Book Now</button>
+            </div>
+
+            <div class="tour-item">
+                <img src="https://live.staticflickr.com/65535/50300293273_eb42f3ad02_h.jpg" alt="Ganga River Cruise "
+                    height="200px">
+                <h4>Ganga River Cruise</h4>
+                <p>Experience the serene beauty of the Ganga River with our exclusive river cruise tour.</p>
+                <p><strong>Price:</strong> ₹1000 per person</p>
+                <button style="color: #1c93e8;" class="book-button">Book Now</button>
+            </div>
+
+            <div class="tour-item">
+                <img src="https://cdn.getyourguide.com/img/tour/6475eb4d2d672.jpeg/98.jpg" alt="Cultural Tour"
+                    height="200px">
+                <h4>Cultural Tour</h4>
+                <p>Immerse yourself in the vibrant culture and rich heritage of Banaras with our cultural tour.</p>
+                <p><strong>Price:</strong> ₹800 per person</p>
+                <button style="color: #1c93e8;"class="book-button">Book Now</button>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Banaras Explorer</h3>
+                <p>Explore the spiritual capital of India with Banaras Explorer. Discover the mystique and grandeur of Varanasi through curated tours and guides.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Ghat Street, Varanasi, UP, India</p>
+                <p>Email: info@banarasexplorer.com</p>
+                <p>Phone: +91 12345 67890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="https://freepnglogo.com/images/all_img/facebook-circle-logo-png.png" alt="Facebook" height="20px"></a>
+                <a href="#"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="Twitter" height="20px"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" height="20px"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" height="20px"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Banaras Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
